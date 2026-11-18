@@ -1,0 +1,1709 @@
+{
+ "summary": {
+  "physical_packages": 550,
+  "logical_skills": 316,
+  "multi_copy_groups": 161,
+  "class_counts": {
+   "identical": 90,
+   "frontmatter_only": 23,
+   "body_diverged": 48
+  },
+  "platform_pairs_vs_canonical": {
+   ".agents": "22/46",
+   ".cursor": "7/12",
+   ".kiro": "31/43",
+   "pi": "0/133"
+  },
+  "diverged_similarity_bands": {
+   "<0.5": 8,
+   ">=0.99": 9,
+   "0.9-0.99": 17,
+   "0.5-0.9": 14
+  }
+ },
+ "groups": [
+  {
+   "name": "accessibility",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-architecture-audit",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-eval",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-harness-construction",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-introspection-debugging",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-security-hardening",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-self-evaluation",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agent-sort",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "agentic-engineering",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.227
+  },
+  {
+   "name": "ai-first-engineering",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "android-clean-architecture",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "angular-developer",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "api-connector-builder",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "api-design",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 1.0
+  },
+  {
+   "name": "architecture-decision-records",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "article-writing",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.199
+  },
+  {
+   "name": "autonomous-loops",
+   "copies": 2,
+   "platforms": [
+    ".kiro",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.988
+  },
+  {
+   "name": "backend-patterns",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.945
+  },
+  {
+   "name": "benchmark",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "benchmark-methodology",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "benchmark-optimization-loop",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "bengali-nlp",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "blueprint",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "brand-discovery",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "brand-voice",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "bun-runtime",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "change-impact",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "click-path-audit",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "clickhouse-io",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "code-tour",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "codebase-onboarding",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "coding-standards",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.935
+  },
+  {
+   "name": "competitive-platform-analysis",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "competitive-report-structure",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "compose-multiplatform-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "content-engine",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.043
+  },
+  {
+   "name": "content-hash-cache-pattern",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 1.0
+  },
+  {
+   "name": "context-and-decisions",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "contract-first",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "conventional-commit-review",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "cost-aware-llm-pipeline",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "cpp-coding-standards",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "cpp-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 1.0
+  },
+  {
+   "name": "crosspost",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.874
+  },
+  {
+   "name": "csharp-testing",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "dart-flutter-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "dashboard-builder",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "data-throughput-accelerator",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "database-migrations",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.879
+  },
+  {
+   "name": "deep-research",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.783
+  },
+  {
+   "name": "deployment-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.989
+  },
+  {
+   "name": "design-system",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "dev-team",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "django-celery",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "django-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "django-security",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.943
+  },
+  {
+   "name": "django-tdd",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "django-verification",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "dmux-workflows",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.788
+  },
+  {
+   "name": "docker-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.599
+  },
+  {
+   "name": "docs-governance",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "documentation-lookup",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "dotnet-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "e2e-testing",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "error-handling",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "eval-harness",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.782
+  },
+  {
+   "name": "exa-search",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.513
+  },
+  {
+   "name": "fal-ai-media",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.934
+  },
+  {
+   "name": "fastapi-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.172
+  },
+  {
+   "name": "flutter-dart-code-review",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "foundation-models-on-device",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "frontend-a11y",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "frontend-patterns",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.977
+  },
+  {
+   "name": "frontend-slides",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.998
+  },
+  {
+   "name": "fsharp-testing",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "git-workflow",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "golang-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.041
+  },
+  {
+   "name": "golang-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.036
+  },
+  {
+   "name": "hexagonal-architecture",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "inherit-legacy-style",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "intent-driven-development",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "investor-materials",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "investor-outreach",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.543
+  },
+  {
+   "name": "java-coding-standards",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "jpa-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.953
+  },
+  {
+   "name": "kotlin-coroutines-flows",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "kotlin-exposed-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "kotlin-ktor-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "kotlin-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "kotlin-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "kubernetes-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "laravel-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "laravel-security",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "laravel-tdd",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "laravel-verification",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "latency-critical-systems",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "liquid-glass-design",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "living-docs-governance",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "make-interfaces-feel-better",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "market-research",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.798
+  },
+  {
+   "name": "mcp-dependency-review",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "mcp-server-patterns",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.973
+  },
+  {
+   "name": "ml-adoption-playbook",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "mle-workflow",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "module-governance",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "module-regression",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "motion-advanced",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "motion-foundations",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "motion-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "mybatis-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "mysql-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "nestjs-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.927
+  },
+  {
+   "name": "nextjs-turbopack",
+   "copies": 5,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.833
+  },
+  {
+   "name": "nuxt4-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "parallel-execution-optimizer",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "perl-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "perl-security",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "perl-testing",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "plan-canvas",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.995
+  },
+  {
+   "name": "postgres-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.956
+  },
+  {
+   "name": "prisma-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "product-capability",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "product-lens",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "production-audit",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "python-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.064
+  },
+  {
+   "name": "python-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.015
+  },
+  {
+   "name": "pytorch-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "quarkus-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "quarkus-security",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "quarkus-tdd",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "quarkus-verification",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "rails-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "react-native-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "react-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.995
+  },
+  {
+   "name": "react-performance",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "react-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "redis-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "regex-vs-llm-structured-text",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "rust-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.999
+  },
+  {
+   "name": "rust-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "search-first",
+   "copies": 2,
+   "platforms": [
+    ".kiro",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.716
+  },
+  {
+   "name": "security-review",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.964
+  },
+  {
+   "name": "skill-host-compat",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.981
+  },
+  {
+   "name": "springboot-patterns",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.985
+  },
+  {
+   "name": "springboot-security",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.988
+  },
+  {
+   "name": "springboot-tdd",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "springboot-verification",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "strategic-compact",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.706
+  },
+  {
+   "name": "swift-actor-persistence",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.99
+  },
+  {
+   "name": "swift-concurrency-6-2",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "swift-protocol-di-testing",
+   "copies": 3,
+   "platforms": [
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.993
+  },
+  {
+   "name": "swiftui-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "tdd-workflow",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.572
+  },
+  {
+   "name": "test-collaboration",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "typescript-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "unified-memory",
+   "copies": 3,
+   "platforms": [
+    ".agents",
+    ".cursor",
+    "skills"
+   ],
+   "class": "frontmatter_only",
+   "min_body_similarity": null
+  },
+  {
+   "name": "verification-loop",
+   "copies": 4,
+   "platforms": [
+    ".agents",
+    ".kiro",
+    "pi",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.944
+  },
+  {
+   "name": "video-editing",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.897
+  },
+  {
+   "name": "vite-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "vue-patterns",
+   "copies": 2,
+   "platforms": [
+    "pi",
+    "skills"
+   ],
+   "class": "identical",
+   "min_body_similarity": null
+  },
+  {
+   "name": "x-api",
+   "copies": 2,
+   "platforms": [
+    ".agents",
+    "skills"
+   ],
+   "class": "body_diverged",
+   "min_body_similarity": 0.924
+  }
+ ]
+}
