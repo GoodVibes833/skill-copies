@@ -1,0 +1,319 @@
+{
+ "groups": [
+  {
+   "evidence": "Both platform copies differ from the reference by one example token only (sk_live_abc123 vs sk_live_...); no platform-specific content.",
+   "name": "api-design",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .cursor copy is a wholesale rewrite (different voice-handling workflow, reworded rules) with no Cursor-specific content; the .agents copy matches the reference.",
+   "name": "article-writing",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .agents and .kiro copies share an older in-memory rate-limiter section that the reference explicitly supersedes ('Do not use per-process in-memory counters'); the .kiro copy additionally mangles a plpgsql dollar-quote ($$ -> $).",
+   "name": "backend-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy omits the reference's entire 96-line Kysely (TypeScript) section; nothing platform-specific replaces it.",
+   "name": "database-migrations",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy carries a weaker extension-only file validator where the reference has magic-byte validation plus a pure-Python fallback section.",
+   "name": "django-security",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .agents copy omits the reference's 57-line ECC Helper section and uses older install/worktree command forms.",
+   "name": "dmux-workflows",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .agents copy adds a 6-line privacy section absent from the reference; the added text is platform-generic, an edit propagated to one copy only.",
+   "name": "frontend-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "Both platform copies replace the plain-text credit line with a Markdown link; a single platform-generic formatting edit.",
+   "name": "frontend-slides",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .cursor copy drops the Voice Handling and Hard Bans sections and rewords throughout; no Cursor-specific content.",
+   "name": "investor-outreach",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "Both platform copies drop only the closing paragraph whose relative link (../../docs/capability-surface-selection.md) resolves from the canonical tree but not from the platform trees.",
+   "name": "mcp-server-patterns",
+   "verdict": "intentional_platform_adaptation"
+  },
+  {
+   "evidence": "The .kiro copy adds a generic 'When to Use This Skill' section and swaps one cross-reference; it is longer than the reference and no platform requirement is visible either way.",
+   "name": "postgres-patterns",
+   "verdict": "unclear"
+  },
+  {
+   "evidence": "Both platform copies describe an older single-signal design and older script paths; the reference's second signal, plugin install, and token-optimization section are absent from both.",
+   "name": "strategic-compact",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy retains the older plain 'node scripts/claw.js' invocation where the reference resolves and validates a plugin root first; a superseded copy.",
+   "name": "autonomous-loops",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy appends a generic 'When to Use This Skill' trigger section and nothing else; as with postgres-patterns in the first sample, a trigger section is compatible with a platform surfacing convention, but no Kiro requirement is visible in the diff.",
+   "name": "deployment-patterns",
+   "verdict": "unclear"
+  },
+  {
+   "evidence": "The .agents copy documents a larger, older Exa tool surface (advanced/company/people/crawling/deep-research tools) and lacks the reference's drift warning and Untrusted Results section; the reference's rewrite around the current two-tool surface never propagated.",
+   "name": "exa-search",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy is a wholesale reorganization (322 vs 508 body lines, a different heading scheme) with no Kiro-specific content; a rewritten edition, not an adaptation.",
+   "name": "fastapi-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy is a heavily abridged edition (216 vs 675 body lines) covering a subset of the reference's patterns; no Kiro-specific content.",
+   "name": "golang-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy adds a DISTINCT keyword to one query plus a generic note on fetch-join duplication; platform-generic content added to one copy only.",
+   "name": "jpa-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy adds Logger-based error logging to the exception-filter example; a platform-generic code improvement present in one copy only.",
+   "name": "nestjs-patterns",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "Both platform copies (.agents, .cursor) omit the reference's entire Middleware File Naming (proxy.ts) section; the omitted content is platform-generic Next.js version guidance.",
+   "name": "nextjs-turbopack",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy is an abridged edition (487 vs 819 body lines, roughly half the reference's headings) with no Kiro-specific content.",
+   "name": "python-testing",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "The .kiro copy alone carries a Swift 5.9+ (iOS 17+) version bump and a Dictionary uniquingKeysWith code fix; neither change is Kiro-specific.",
+   "name": "swift-actor-persistence",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "Both platform copies are strict subsets of the reference, omitting its Plan Handoff, Git Checkpoints, and TDD Evidence Report sections; no platform-specific content replaces them.",
+   "name": "tdd-workflow",
+   "verdict": "drift"
+  },
+  {
+   "evidence": "Both platform copies lack the reference's pipefail/sed output-limiting hardening (older head -30 forms throughout); the .kiro copy's two platform renames (Kiro sessions, postToolUse hooks) are incidental to that staleness.",
+   "name": "verification-loop",
+   "verdict": "drift"
+  }
+ ],
+ "method": "Two disjoint random samples of the 48 body_diverged groups in reproduction.json: 12 drawn with seed 20261118, then 12 more drawn with seed 20261119 from the remaining 36 (combined n=24). Each sampled group's platform copies were diffed against the reference (skills/) copy and classified by reading the diffs: drift = divergence with no platform-specific rationale (stale or superseded copies, or edits propagated to one copy only); intentional_platform_adaptation = differing content tied to the target platform; unclear = evidence compatible with both. First-reader combined result: 21 drift, 1 intentional platform adaptation, 2 unclear; drift share 21/24 = 88% (95% Wilson interval 69-96%). These first-reader counts are superseded by the adjudicated result recorded in second_reader.adjudicated_counts (20 drift, 1 intentional platform adaptation, 3 unclear; 83%, 95% Wilson interval 64-93%), which is the result the paper reports.",
+ "population": 48,
+ "sample_size": 24,
+ "samples": [
+  {
+   "counts": {
+    "drift": 10,
+    "intentional_platform_adaptation": 1,
+    "unclear": 1
+   },
+   "seed": 20261118,
+   "size": 12
+  },
+  {
+   "counts": {
+    "drift": 11,
+    "intentional_platform_adaptation": 0,
+    "unclear": 1
+   },
+   "seed": 20261119,
+   "size": 12
+  }
+ ],
+ "summary_counts": {
+  "drift": 21,
+  "intentional_platform_adaptation": 1,
+  "unclear": 2
+ },
+ "reported_counts": {
+  "note": "The paper reports the adjudicated counts (second_reader.adjudicated_counts), not the first-reader summary_counts above.",
+  "drift": 20,
+  "intentional_platform_adaptation": 1,
+  "unclear": 3
+ },
+ "second_reader": {
+  "method": "Independent second reading of the same 24 sampled groups. The reader extracted only the group names and the sampling method from this file, then classified each group from the actual diffs of every platform copy against the reference (skills/) copy in the pinned snapshot (ECC d2ef268), recording verdicts in a scratch file before opening the first reader's per-group verdicts and evidence. (The first reader's aggregate counts appear in the method string above and were visible during name extraction; the per-group verdicts were not.) Each of the 7 disagreements was then adjudicated by re-inspecting the diffs and, where relevant, corpus-wide evidence; the resolution and its basis are recorded per disagreement. The adjudicated counts below supersede summary_counts as the reported result.",
+  "agreement": {
+   "agreed": 17,
+   "total": 24,
+   "rate": 0.708
+  },
+  "second_verdicts": {
+   "api-design": {
+    "verdict": "drift",
+    "evidence": "Canonical redacted the example API key (sk_live_abc123 -> sk_live_...); .agents/.kiro retain the old value; pi identical to canonical. Sanitization edit not propagated; no platform rationale."
+   },
+   "article-writing": {
+    "verdict": "drift",
+    "evidence": ".cursor copy is a wholesale paraphrase lacking canonical's brand-voice integration and sharper banned-pattern rules; reads as a superseded earlier draft. No Cursor-specific content."
+   },
+   "backend-patterns": {
+    "verdict": "drift",
+    "evidence": "Canonical fixed Zod error.issues and replaced the in-memory rate limiter section with shared-store guidance; .agents/.kiro keep both superseded versions (kiro also has mangled $$->$ SQL quoting); pi identical."
+   },
+   "database-migrations": {
+    "verdict": "drift",
+    "evidence": ".kiro lacks canonical's ~94-line Kysely section and new description, retains the dropped 'When to Use This Skill' tail; pi identical. Kysely content is platform-neutral."
+   },
+   "django-security": {
+    "verdict": "drift",
+    "evidence": "Canonical hardened file-upload validation to magic-byte MIME checking (+filetype fallback); .kiro keeps the weaker extension-only validator; pi identical."
+   },
+   "dmux-workflows": {
+    "verdict": "drift",
+    "evidence": ".agents lacks canonical's ~52-line ECC Helper section and cautious install guidance, keeps older worktree syntax and troubleshooting text; dmux is cross-harness, nothing .agents-specific."
+   },
+   "frontend-patterns": {
+    "verdict": "drift",
+    "evidence": ".agents copy alone carries an extra 'Privacy and Data Boundaries' section absent from canonical — a generic, platform-neutral edit propagated to one copy only; .kiro frontmatter-only, pi identical."
+   },
+   "frontend-slides": {
+    "verdict": "drift",
+    "evidence": "Only body difference in .agents/.cursor is the zarazhangrui credit line: linked name vs canonical's plain '(credit: @zarazhangrui)'. No platform tie."
+   },
+   "investor-outreach": {
+    "verdict": "drift",
+    "evidence": ".cursor is a paraphrased earlier version lacking canonical's Voice Handling (brand-voice) and Hard Bans sections; .agents body identical. No Cursor-specific content."
+   },
+   "mcp-server-patterns": {
+    "verdict": "drift",
+    "evidence": ".agents/.cursor both lack canonical's added cross-reference paragraph to docs/capability-surface-selection.md; pi identical. Edit reached canonical+pi only."
+   },
+   "postgres-patterns": {
+    "verdict": "drift",
+    "evidence": ".kiro keeps the older database-migrations cross-reference and the 'When to Use This Skill' tail that canonical dropped/replaced (clickhouse-io ref); pi identical."
+   },
+   "strategic-compact": {
+    "verdict": "drift",
+    "evidence": ".agents lacks canonical's plugin-install guidance, COMPACT_STATE_TTL_DAYS, window-precedence notes and Token Optimization Patterns section; .kiro is older still (tool-call tracking only, no context-size signal). Platform-neutral Claude Code hook content."
+   },
+   "autonomous-loops": {
+    "verdict": "drift",
+    "evidence": "Canonical deprecated the skill ('retained for compatibility only: use continuous-agent-loop') and hardened script invocation via plugin-root resolution; .kiro lacks the deprecation notice and uses naive 'node scripts/claw.js'."
+   },
+   "deployment-patterns": {
+    "verdict": "drift",
+    "evidence": ".kiro body differs only by the trailing 'When to Use This Skill' section canonical dropped (plus description reformat); pi identical."
+   },
+   "exa-search": {
+    "verdict": "drift",
+    "evidence": "Canonical was deliberately narrowed to the repo's exposed tool surface (web_search_exa, get_code_context_exa) and gained a drift-warning banner and Untrusted Results section; .agents retains the older broader tool catalogue (advanced/company/people search). Repo-wide scoping, not .agents-specific."
+   },
+   "fastapi-patterns": {
+    "verdict": "unclear",
+    "evidence": ".kiro copy is a wholly different, shorter document (327 vs 514 lines, origin: community, disjoint structure) with no Kiro-specific content. Compatible with a deliberate alternate edition for the .kiro tree and with an unreconciled duplicate contribution; diffs alone cannot decide."
+   },
+   "golang-patterns": {
+    "verdict": "unclear",
+    "evidence": ".kiro copy is a largely independent shorter document (227 vs 681 lines, ~74 shared lines); frontmatter adds a platform-format globs field but the body is platform-neutral Go guidance. Deliberate edition vs unreconciled duplicate not decidable from the diffs."
+   },
+   "jpa-patterns": {
+    "verdict": "drift",
+    "evidence": ".kiro copy alone carries a fix canonical lacks: 'select distinct' on the fetch-join query plus an explanatory DISTINCT note. Platform-neutral JPA semantics — an edit propagated to one copy only; pi identical."
+   },
+   "nestjs-patterns": {
+    "verdict": "drift",
+    "evidence": ".kiro copy alone adds Logger wiring and error logging to the HttpExceptionFilter example that canonical lacks. Platform-neutral NestJS content, one-sided edit; pi identical."
+   },
+   "nextjs-turbopack": {
+    "verdict": "drift",
+    "evidence": ".agents/.cursor lack canonical's Middleware File Naming (proxy.ts) section; .kiro body matches canonical; pi identical. Canonical addition not propagated."
+   },
+   "python-testing": {
+    "verdict": "unclear",
+    "evidence": ".kiro copy is a wholly different document (497 vs 825 lines, different structure) with a platform-format globs frontmatter field but platform-neutral pytest content. Same ambiguity as golang-patterns: curated alternate edition vs unreconciled duplicate."
+   },
+   "swift-actor-persistence": {
+    "verdict": "drift",
+    "evidence": ".kiro copy alone bumps the version floor (Swift 5.9+/iOS 17+) and replaces trapping Dictionary(uniqueKeysWithValues:) with uniquingKeysWith. Platform-neutral Swift fixes in one copy only; pi identical."
+   },
+   "tdd-workflow": {
+    "verdict": "drift",
+    "evidence": "Canonical (590 lines) has whole sections .agents (467) and .kiro (414) lack — Plan Handoff, Git Checkpoints, Step 8 TDD Evidence Report, runner detection, Bun pattern; pi identical. Canonical expansion not propagated."
+   },
+   "verification-loop": {
+    "verdict": "intentional_platform_adaptation",
+    "evidence": ".kiro copy is deliberately re-branded for the target platform: 'A comprehensive verification system for Kiro sessions' in description and intro (canonical: Claude Code) and Kiro-style postToolUse hook naming. It also lags canonical's pipefail hardening (a drift component), and the .agents copy is a stale pre-hardening version, but the group is the only one whose differing content is explicitly tied to the target platform."
+   }
+  },
+  "disagreement_resolutions": {
+   "mcp-server-patterns": {
+    "first_reader": "intentional_platform_adaptation",
+    "second_reader": "drift",
+    "resolution": "unclear",
+    "basis": "Genuinely ambiguous. The only body difference in both edited platform trees (.agents/.cursor) is the missing closing paragraph whose relative link (../../docs/capability-surface-selection.md) resolves only from the reference tree, which supports the first reader's deliberate-stripping reading. Against it: the pi tree retains the same paragraph although the link is equally unresolvable from pi (no pi/docs), other platform copies retain equally unresolvable ../../ links (react-patterns), and an identical absence pattern in nextjs-turbopack (a section added to the reference only) was classified drift by both readers. The diff alone cannot distinguish 'added to the reference after the platform snapshots' from 'stripped during platform edition generation'; neither reading is decisively better supported."
+   },
+   "postgres-patterns": {
+    "first_reader": "unclear",
+    "second_reader": "drift",
+    "resolution": "unclear",
+    "basis": "First reader better supported. The added 'When to Use This Skill' section cannot be a leftover of an older reference text: that section appears in 0 of 314 reference-tree skills but in 10 of 43 .kiro copies, i.e. it is a .kiro-edition convention; the swapped cross-reference also points to database-migrations, a skill present in the .kiro tree, whereas the reference's target (clickhouse-io) is absent from that tree. The divergence is therefore at least partly deliberate platform-edition content, but whether it amounts to a considered platform requirement is not visible, so unclear stands."
+   },
+   "deployment-patterns": {
+    "first_reader": "unclear",
+    "second_reader": "drift",
+    "resolution": "unclear",
+    "basis": "First reader better supported, on the same corpus-wide evidence as postgres-patterns: the sole body difference is the added 'When to Use This Skill' section, a section the reference tree never uses (0/314) but the .kiro edition process appends (10/43 .kiro copies). Not explicable as staleness; not demonstrably a platform requirement either."
+   },
+   "fastapi-patterns": {
+    "first_reader": "drift",
+    "second_reader": "unclear",
+    "resolution": "drift",
+    "basis": "First reader better supported. The .kiro copy is a wholesale reorganization (different heading scheme, ~2/3 the length) with no Kiro-specific content anywhere in the body. Adaptation requires positive platform-tied evidence; a rewritten edition with none falls under drift's definition (superseded copy). The bare possibility of deliberate curation is not evidence compatible with both readings."
+   },
+   "golang-patterns": {
+    "first_reader": "drift",
+    "second_reader": "unclear",
+    "resolution": "drift",
+    "basis": "First reader better supported. The .kiro copy is a heavily abridged, reorganized edition of the same pattern topics with no Kiro-specific body content. Its frontmatter carries a platform-format globs field, but that adapts the package metadata, not the diverged body being classified. No platform-specific rationale for the body divergence: drift."
+   },
+   "python-testing": {
+    "first_reader": "drift",
+    "second_reader": "unclear",
+    "resolution": "drift",
+    "basis": "First reader better supported, as for golang-patterns: an abridged alternate edition (roughly half the reference's headings) with platform-neutral pytest content; the globs frontmatter field does not explain the body divergence. Superseded/rewritten edition: drift."
+   },
+   "verification-loop": {
+    "first_reader": "drift",
+    "second_reader": "intentional_platform_adaptation",
+    "resolution": "intentional_platform_adaptation",
+    "basis": "Second reader better supported. The .kiro copy was deliberately retargeted: 'A comprehensive verification system for Kiro sessions' in both description and introduction (reference: Claude Code sessions) and Kiro-style postToolUse hook naming; it is the only .kiro copy in the tree carrying such renames, and a merely stale copy cannot acquire them (the stale .agents copy still says 'Claude Code sessions'). Drift's definition requires no platform-specific rationale, which this copy demonstrably has. The copy also lags the reference's pipefail hardening, so the group is mixed, but the adaptation component is the part with a demonstrated deliberate cause."
+   }
+  },
+  "first_reader_counts": {
+   "drift": 21,
+   "intentional_platform_adaptation": 1,
+   "unclear": 2
+  },
+  "adjudicated_counts": {
+   "drift": 20,
+   "intentional_platform_adaptation": 1,
+   "unclear": 3
+  },
+  "adjudicated_drift_share": "20/24 = 83% (95% Wilson interval 64-93%)"
+ }
+}

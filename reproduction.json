@@ -1,12 +1,20 @@
 {
  "summary": {
   "physical_packages": 550,
+  "packages_without_name": 0,
   "logical_skills": 316,
   "multi_copy_groups": 161,
   "class_counts": {
    "identical": 90,
    "frontmatter_only": 23,
    "body_diverged": 48
+  },
+  "frontmatter_only_field_divergence": {
+   "metadata": 19,
+   "license": 14,
+   "origin": 14,
+   "description": 12,
+   "allowed-tools": 1
   },
   "platform_pairs_vs_canonical": {
    ".agents": "22/46",
@@ -15,10 +23,10 @@
    "pi": "0/133"
   },
   "diverged_similarity_bands": {
-   "<0.5": 8,
-   ">=0.99": 9,
-   "0.9-0.99": 17,
-   "0.5-0.9": 14
+   "<0.5": 7,
+   ">=0.99": 11,
+   "0.5-0.9": 15,
+   "0.9-0.99": 15
   }
  },
  "groups": [
@@ -112,7 +120,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.227
+   "min_body_similarity": 0.366
   },
   {
    "name": "ai-first-engineering",
@@ -185,7 +193,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.199
+   "min_body_similarity": 0.688
   },
   {
    "name": "autonomous-loops",
@@ -195,7 +203,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.988
+   "min_body_similarity": 0.99
   },
   {
    "name": "backend-patterns",
@@ -207,7 +215,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.945
+   "min_body_similarity": 0.952
   },
   {
    "name": "benchmark",
@@ -352,7 +360,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.935
+   "min_body_similarity": 0.961
   },
   {
    "name": "competitive-platform-analysis",
@@ -393,7 +401,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.043
+   "min_body_similarity": 0.391
   },
   {
    "name": "content-hash-cache-pattern",
@@ -539,7 +547,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.783
+   "min_body_similarity": 0.868
   },
   {
    "name": "deployment-patterns",
@@ -602,7 +610,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.943
+   "min_body_similarity": 0.944
   },
   {
    "name": "django-tdd",
@@ -632,7 +640,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.788
+   "min_body_similarity": 0.796
   },
   {
    "name": "docker-patterns",
@@ -717,7 +725,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.513
+   "min_body_similarity": 0.552
   },
   {
    "name": "fal-ai-media",
@@ -727,7 +735,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.934
+   "min_body_similarity": 0.937
   },
   {
    "name": "fastapi-patterns",
@@ -738,7 +746,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.172
+   "min_body_similarity": 0.325
   },
   {
    "name": "flutter-dart-code-review",
@@ -822,7 +830,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.041
+   "min_body_similarity": 0.158
   },
   {
    "name": "golang-testing",
@@ -833,7 +841,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.036
+   "min_body_similarity": 0.244
   },
   {
    "name": "hexagonal-architecture",
@@ -885,7 +893,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.543
+   "min_body_similarity": 0.833
   },
   {
    "name": "java-coding-standards",
@@ -1188,7 +1196,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.927
+   "min_body_similarity": 0.979
   },
   {
    "name": "nextjs-turbopack",
@@ -1201,7 +1209,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.833
+   "min_body_similarity": 0.847
   },
   {
    "name": "nuxt4-patterns",
@@ -1324,7 +1332,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.064
+   "min_body_similarity": 0.205
   },
   {
    "name": "python-testing",
@@ -1335,7 +1343,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.015
+   "min_body_similarity": 0.232
   },
   {
    "name": "pytorch-patterns",
@@ -1490,7 +1498,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.716
+   "min_body_similarity": 0.785
   },
   {
    "name": "security-review",
@@ -1502,7 +1510,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.964
+   "min_body_similarity": 0.967
   },
   {
    "name": "skill-host-compat",
@@ -1512,7 +1520,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.981
+   "min_body_similarity": 0.986
   },
   {
    "name": "springboot-patterns",
@@ -1523,7 +1531,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.985
+   "min_body_similarity": 0.986
   },
   {
    "name": "springboot-security",
@@ -1534,7 +1542,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.988
+   "min_body_similarity": 0.991
   },
   {
    "name": "springboot-tdd",
@@ -1565,7 +1573,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.706
+   "min_body_similarity": 0.728
   },
   {
    "name": "swift-actor-persistence",
@@ -1619,7 +1627,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.572
+   "min_body_similarity": 0.585
   },
   {
    "name": "test-collaboration",
@@ -1663,7 +1671,7 @@
     "skills"
    ],
    "class": "body_diverged",
-   "min_body_similarity": 0.944
+   "min_body_similarity": 0.951
   },
   {
    "name": "video-editing",
